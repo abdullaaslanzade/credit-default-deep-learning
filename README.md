@@ -113,3 +113,16 @@ The dataset itself is not included in the repository. Download it from UCI using
 ## Notes
 
 This is an educational portfolio project. In a production credit-risk system, threshold selection and model evaluation should also incorporate business costs, calibration, governance, stability monitoring, fairness analysis, and out-of-time validation.
+
+## Results
+
+Final model: Weighted ANN with EarlyStopping and validation-based threshold selection.
+
+- Test Accuracy: **0.7893**
+- Test ROC-AUC: **0.7698**
+- Default Precision: **0.5229**
+- Default Recall: **0.5411**
+- Default F1-score: **0.5319**
+- Selected threshold: **0.595**
+
+The weighted model improves the ability to detect default cases compared with the baseline ANN, while keeping overall performance balanced.
